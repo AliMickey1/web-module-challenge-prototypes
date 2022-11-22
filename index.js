@@ -84,11 +84,12 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy = favoriteToy;
 }
 
+Baby.prototype = Object.create(Baby.prototype);
+
 Baby.prototype.play = function()
 {
   console.log(`Playing with ${Baby.favoriteToy}`);
 }
-
 
 /* 
   TASK 4
